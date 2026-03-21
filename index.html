@@ -11,7 +11,7 @@
 <style>
 @font-face {
     font-family: "CustomFont";
-    src: url("1.woff") format("woff");
+    src: url("./1.woff") format("woff");
 }
 
 body {
@@ -51,6 +51,13 @@ body {
     margin-top: 20px;
     display: flex;
     gap: 20px;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 180px;
+    text-align: center;
+    flex: 0 0 auto;
 }
 
 .instructions, .credits {
@@ -64,7 +71,9 @@ body {
 }
 
 .back {
-    margin-top: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 .minecraft-btn {
@@ -74,7 +83,6 @@ body {
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	padding: 6px 20px;
-  	width: 150px;
   	color: white;
   	cursor: pointer;
 }
